@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfpcuPP9g.woff2) format('woff2');
+    unicode-range: U+0590-05FF, U+200C-2010, U+20AA, U+25CC, U+FB1D-FB4F;
+  }
+  /* vietnamese */
+  @font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfqMuPP9g.woff2) format('woff2');
+    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+  }
+  /* latin-ext */
+  @font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfqcuPP9g.woff2) format('woff2');
+    unicode-range: U+0100-02AF, U+0304, U+0308, U+0329, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+  }
+  /* latin */
+  @font-face {
+    font-family: 'Varela Round';
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/varelaround/v20/w8gdH283Tvk__Lua32TysjIfp8uP.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+body{margin:0 ;
+direction:ltr ;
+font-family: Varela Round; }
+a{text-decoration:none ;
+padding:12px ;font-weight: 600; }
+ul{margin:0 ;
+list-style:none }
+*,*::after,*::before{box-sizing: border-box;}
+.header{position: fixed;background-color: #fff;width: 100%;}
+.container{width: 80%;margin:0 auto}
+.header .container{display: flex;justify-content: space-between;align-items: center;padding: 20px 0;}
+.header .logotitle h3 a{color:#093a58 ;}
+.header .menu ul{display: flex;flex-direction: row;}
+.header .menu ul li a{color:#3acec2 ;}
+.header .menu ul li:hover a{color: #093a58;transition: all 1s;}
+.downheaderbox{background-color: #3acec2;padding: 145px 0 50px;}
+.downheaderbox .container{text-align: center;}
+.downheaderbox img{width: 200px;height: auto;}
+.downheaderbox h1,span{color: #fff;}
+.maincontent .container{display: flex;gap: 30px;padding: 50px 0 50px;}
+.maincontent p{line-height: 25px;}
+.maincontent p{color: #3a3a3a}
+.maincontent h3{color: #093a58;}
+.maincontent .column1,.column3{width: 30%;}
+.maincontent .column2{width: 40%;}
+.maincontent .column2 .picture{width: 100%;position: relative;}
+.maincontent .column2 .picture img{width: 100%;height: auto;}
+.maincontent .column2 .picture .picinfo{position: absolute;right: 0;bottom: 0
+    ;background-color: rgba(19, 43, 102, .85);padding: 8px;text-align: center;}
+.maincontent .column2 .picture h5,span{color: #fff;font-size: 13px;}
+.footer{background-color: #d9e4ea;padding: 40px 0 40px;text-align: center;}
+.footer span{color: #3a3a3a;font-size: 16px;}
+
+@media (max-width:680px){
+    .header .container{display: block;}
+    .header .container .logotitle{text-align: center;}
+    .header .container .menu ul{justify-content: center;}
+    .maincontent .container {display: block;}
+    .maincontent .container .column1,.column3{width: 100%;}
+    .maincontent .container .column2{width: 100%;}
+    .maincontent .container .column2 .picinfo{padding: 25px;}
+   
+}
+
+
+
